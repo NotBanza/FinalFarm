@@ -105,7 +105,7 @@ _session.headers.update({
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
 })
 
-def fetch_from_upstream(url: str) -> dict | None:
+def fetch_from_upstream(url: str, name: str = None) -> dict | None:
     """
     A simple, patient function to fetch data from a single URL.
     This is ONLY used by the background refresher.
